@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_home"
+        android:icon="@drawable/menu_item_home"
+        android:title="Home"/>
+
+    <item android:id="@+id/menu_treinamento"
+        android:icon="@drawable/menu_item_treino"
+        android:title="Treinamento"/>
+
+    <item android:id="@+id/menu_minha_conta"
+        android:icon="@drawable/menu_item_minha_conta"
+        android:title="Conta"/>
+
+
+</menu>

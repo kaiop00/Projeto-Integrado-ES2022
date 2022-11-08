@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.form.FormMensagemActivity">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_voltar_salvar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Titulo da mensagem"
+                android:textColor="@color/azul_padrao"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/edit_titulo_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_edit"
+                android:inputType="textCapWords"
+                android:padding="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Mensagem"
+                android:textColor="@color/azul_padrao"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_msg"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/bg_edit"
+                android:hint="EX: Queridos alunos..."
+                android:inputType="textCapWords"
+                android:padding="16dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Data"
+                android:textColor="@color/azul_padrao"
+                android:textStyle="bold" />
+
+
+            <com.santalu.maskara.widget.MaskEditText
+                android:id="@+id/edit_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/bg_edit"
+                android:hint="EX: 10/07/2022"
+                android:inputType="number"
+                android:padding="16dp"
+                app:mask="__/__/____"
+                app:maskCharacter="_"
+                app:maskStyle="completable" />
+
+
+            <RadioGroup
+                android:id="@+id/radio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/aberto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:buttonTint="@color/azul_padrao"
+                    android:text="Aberto"
+                    android:textColor="@color/azul_padrao"
+                    android:checked="true"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/fechado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:buttonTint="@color/azul_padrao"
+                    android:text="Fechado"
+                    android:textColor="@color/azul_padrao"
+                    android:textStyle="bold" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center_horizontal"
+                android:text="Inicio do funcionamento"
+                android:textColor="@color/azul_padrao"
+                android:textStyle="bold" />
+
+            <com.santalu.maskara.widget.MaskEditText
+                android:id="@+id/edit_inicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/bg_edit"
+                android:hint="EX: 05:00"
+                android:inputType="number"
+                android:padding="16dp"
+                app:mask="__:__"
+                app:maskCharacter="_"
+                app:maskStyle="completable" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:gravity="center_horizontal"
+                android:text="Hora de fechar"
+                android:textColor="@color/azul_padrao"
+                android:textStyle="bold" />
+
+            <com.santalu.maskara.widget.MaskEditText
+                android:id="@+id/edit_fim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/bg_edit"
+                android:hint="EX: 21:00"
+                android:inputType="number"
+                android:padding="16dp"
+                app:mask="__:__"
+                app:maskCharacter="_"
+                app:maskStyle="completable" />
+
+
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:indeterminateTint="@color/azul_padrao"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

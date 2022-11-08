@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/academia_navigation"
+    app:startDestination="@id/menu_home">
+
+    <fragment
+        android:id="@+id/menu_home"
+        android:name="com.ufc.academiaufc.fragments.academia.HomeAcademiaFragment"
+        android:label="fragment_home_academia"
+        tools:layout="@layout/fragment_home_academia" />
+
+    <fragment
+        android:id="@+id/menu_treinamento"
+        android:name="com.ufc.academiaufc.fragments.academia.TreinosAcademiaFragment"
+        android:label="fragment_treinos_academia"
+        tools:layout="@layout/fragment_treinos_academia" />
+    <fragment
+        android:id="@+id/menu_minha_conta"
+        android:name="com.ufc.academiaufc.fragments.academia.MinhaContaAcademiaFragment"
+        android:label="fragment_minha_conta_academia"
+        tools:layout="@layout/fragment_minha_conta_academia" />
+</navigation>
