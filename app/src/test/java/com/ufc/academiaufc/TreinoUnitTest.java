@@ -16,6 +16,7 @@ public class TreinoUnitTest {
     @Before
     public void Treino(){
         treino = new Treino();
+        treino.setId("123");
 
     }
 
