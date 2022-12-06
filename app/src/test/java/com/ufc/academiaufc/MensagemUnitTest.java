@@ -13,9 +13,9 @@ public class MensagemUnitTest {
     Mensagem mensagem;
 
     @Before
-    public void Mensagem(){
+    public void Mensagem() {
         mensagem = new Mensagem(
-                "frfrf","test1","Denilson","feriado","hoje é feriado","12","fechado","",""
+                "frfrf", "test1", "Denilson", "feriado", "hoje é feriado", "12", "fechado", "", ""
         );
     }
 
@@ -23,42 +23,49 @@ public class MensagemUnitTest {
     public void testIdMensagem() {
         assertNotNull(mensagem.getId());
     }
+
     @Test
     public void testIdUserMensagem() {
         assertNotNull(mensagem.getIdUser());
     }
+
     @Test
     public void testNomeUserMensagem() {
         String nome = "Denilson";
-        assertEquals("",nome, mensagem.getNomeUser());
+        assertEquals("", nome, mensagem.getNomeUser());
     }
+
     @Test
     public void testTituloMensagem() {
-        assertEquals("","feriado", mensagem.getTitulo());
+        assertEquals("", "feriado", mensagem.getTitulo());
     }
+
     @Test
     public void testMsgMensagem() {
-        assertEquals("","hoje é feriado", mensagem.getMsg());
+        assertEquals("", "hoje é feriado", mensagem.getMsg());
     }
+
     @Test
     public void testDiaMensagem() {
         String Dia = "12";
-        assertEquals("",Dia, mensagem.getDia());
+        assertEquals("", Dia, mensagem.getDia());
     }
+
     @Test
     public void testSituacaoMensagem() {
         String Situacao = "fechado";
-        assertEquals("",Situacao, mensagem.getSituacao());
-    }
-    @Test
-    public void testHorarioInicalMensagem() {
-        assertEquals("","", mensagem.getHoraInicio());
-    }
-    @Test
-    public void testHorarioFinalMensagem() {
-    assertEquals("","", mensagem.getHoraFinal());
+        assertEquals("", Situacao, mensagem.getSituacao());
     }
 
+    @Test
+    public void testHorarioInicalMensagem() {
+        assertEquals("", "", mensagem.getHoraInicio());
+    }
+
+    @Test
+    public void testHorarioFinalMensagem() {
+        assertEquals("", "", mensagem.getHoraFinal());
+    }
 
 
 }
