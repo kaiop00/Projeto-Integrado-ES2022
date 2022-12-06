@@ -39,6 +39,8 @@ public class Treino implements Serializable {
     private String nivel;
     private boolean status;
 
+
+
     public Treino() {
         DatabaseReference reference = FirebaseHelper.getDatabaseReference();
         this.setId(reference.push().getKey());

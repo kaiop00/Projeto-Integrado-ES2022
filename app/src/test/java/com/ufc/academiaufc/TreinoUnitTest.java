@@ -16,6 +16,7 @@ public class TreinoUnitTest {
     @Before
     public void Treino(){
         treino = new Treino();
+
     }
 
     @Test
@@ -25,7 +26,7 @@ public class TreinoUnitTest {
 
     @Test
     public void testSetIdTreino() {
-        String id = "-NGERobDoh6Uz1Wwy-gE";
+        String id = "123";
         treino.setId(id);
         assertEquals("",id, treino.getId());
     }
