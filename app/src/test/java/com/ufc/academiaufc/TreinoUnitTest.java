@@ -80,10 +80,16 @@ public class TreinoUnitTest {
     }
 
     @Test
-    public void testStatusTreino(){
+    public void testSetStatusTreino(){
         boolean status = false;
         treino.setStatus(status);
         assertEquals("",status,treino.isStatus());
+    }
+    @Test
+    public void testSetTecnicaAvancadaTreino(){
+        String tecnica = "Drop-set";
+        treino.setTecnicaAvancada(tecnica);
+        assertEquals("",tecnica,treino.getTecnicaAvancada());
     }
 
 
