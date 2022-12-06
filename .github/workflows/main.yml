@@ -1,5 +1,5 @@
 name: Android CI
-on: [push]
+on: [ push ]
 
 jobs:
   test:
@@ -14,6 +14,9 @@ jobs:
 
       - name: Change wrapper permissions
         run: chmod +x ./gradlew
+
+      - name: Build with Gradle
+        run: ./gradlew build
 
       # Execute unit tests
       - name: Unit Test
