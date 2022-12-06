@@ -40,6 +40,18 @@ public class Treino implements Serializable {
     private boolean status;
 
 
+    public Treino(String id, String idUser, String nomeUSer, boolean contaUser, String titulo, String nome, String serieRepeticao, String tecnicaAvancada, String nivel, boolean status) {
+        this.id = id;
+        this.idUser = idUser;
+        this.nomeUSer = nomeUSer;
+        this.contaUser = contaUser;
+        this.titulo = titulo;
+        this.nome = nome;
+        this.serieRepeticao = serieRepeticao;
+        this.tecnicaAvancada = tecnicaAvancada;
+        this.nivel = nivel;
+        this.status = status;
+    }
 
     public Treino() {
         DatabaseReference reference = FirebaseHelper.getDatabaseReference();

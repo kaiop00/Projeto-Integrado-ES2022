@@ -18,6 +18,17 @@ public class Mensagem implements Serializable {
     private String horaFinal;
 
 
+    public Mensagem(String id, String idUser, String nomeUser, String titulo, String msg, String dia, String situacao, String horaInicio, String horaFinal) {
+        this.id = id;
+        this.idUser = idUser;
+        this.nomeUser = nomeUser;
+        this.titulo = titulo;
+        this.msg = msg;
+        this.dia = dia;
+        this.situacao = situacao;
+        this.horaInicio = horaInicio;
+        this.horaFinal = horaFinal;
+    }
 
     public Mensagem() {
         DatabaseReference reference = FirebaseHelper.getDatabaseReference();

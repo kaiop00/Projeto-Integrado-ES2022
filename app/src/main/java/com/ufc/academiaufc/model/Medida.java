@@ -16,8 +16,16 @@ public class Medida implements Serializable {
     private String mes;
     private String ano;
 
-
-
+    public Medida(String id, String idUser, String nomeUser, String medidaBracoD, String medidaBracoE, String objetivo, String mes, String ano) {
+        this.id = id;
+        this.idUser = idUser;
+        this.nomeUser = nomeUser;
+        this.medidaBracoD = medidaBracoD;
+        this.medidaBracoE = medidaBracoE;
+        this.objetivo = objetivo;
+        this.mes = mes;
+        this.ano = ano;
+    }
 
     public Medida() {
         DatabaseReference reference = FirebaseHelper.getDatabaseReference();

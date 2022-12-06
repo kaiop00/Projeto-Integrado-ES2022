@@ -10,7 +10,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class UsuarioUnitTest {
-    Usuario usuario;
+    private Usuario usuario;
 
     @Before
     public void Usuario(){
