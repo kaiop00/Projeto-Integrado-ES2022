@@ -69,7 +69,7 @@ public class UsuarioUnitTest {
     public void testTipoContaAlunoUsuario(){
         String tipo = "Aluno";
         usuario.setTipo(tipo);
-        assertNotEquals("", "Aluno", usuario.getTipo());
+        assertEquals("", "Aluno", usuario.getTipo());
     }
 
     @Test
