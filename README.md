@@ -8,6 +8,6 @@ Denilson Rabelo dos Santos - Engenharia de Software ||
 Elliton Dias Gomes - Engenharia de Software 
 
 
-##  Trello : 
+## 🚧 Trello : 
 
-##  Figma : 
+## 🚧 Figma : 
