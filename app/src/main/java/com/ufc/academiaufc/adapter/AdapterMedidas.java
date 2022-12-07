@@ -20,6 +20,7 @@ public class AdapterMedidas extends RecyclerView.Adapter<AdapterMedidas.MyViewHo
     private Onclick onclick;
 
 
+
     public AdapterMedidas(List<Medida> medidaList, Onclick onclick) {
         this.medidaList = medidaList;
         this.onclick = onclick;
