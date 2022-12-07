@@ -6,3 +6,6 @@ Este documento é destinado aos desenvolvedores ou interessados do app “academ
 Antonio Kaio Elias Portela - Engenharia de Software || 
 Denilson Rabelo dos Santos - Engenharia de Software ||
 Elliton Dias Gomes - Engenharia de Software 
+
+
+## : Trello : 
